@@ -11,62 +11,8 @@ Then you need to go to the app.py file, change the database user and password to
 
 The api creates the products table along with the fields: id, name and description.
 
-You can perform crud operations based on different routes:
+You can perform crud operations based on different routes: GET, POST, PUT and DELETE.
 
-GET
---
-/products
+You can see the documentation made with [postman](https://documenter.getpostman.com/view/18957545/UVXqGZPW).
 
-GET
---
-/products/id
 
-id **required**
-
-**int**
-
-ID of the product
-
-POST
---
-/products
-
-**Body parameters**
-
-name **string**
-
-Name of the product
-
-description **string**
-
-Description of the product
-
-PUT
---
-/products/id
-
-id **required**
-
-**int**
-
-ID of the product
-
-**Body parameters**
-
-name **string**
-
-Name of the product
-
-description **string**
-
-Description of the product
-
-DELETE
---
-/products/id
-
-id **required**
-
-**int**
-
-ID of the product
