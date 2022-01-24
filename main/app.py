@@ -4,7 +4,7 @@ from flask_marshmallow import Marshmallow
 
 app = Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycopg2://user:password@localhost/categories"
+app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycopg2://postgres:zachemya@localhost/categories"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 database = SQLAlchemy(app)
@@ -14,7 +14,7 @@ marshmall = Marshmallow(app)
 class Products(database.Model):
     """Create a record in the database table"""
     id = database.Column(database.Integer, primary_key=True)
-    name = database.Column(database.String(30))
+    name = database.Column(database.String(30), nullable=False)
     description = database.Column(database.String())
 
     def __init__(self, name, description):
