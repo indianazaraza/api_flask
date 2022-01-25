@@ -15,4 +15,4 @@ You can perform crud operations based on different routes: GET, POST, PUT and DE
 
 You can see the documentation made with [postman](https://documenter.getpostman.com/view/18957545/UVXqGZPW).
 
-
+The test were done with Junit 5 and REST-assured. They validate each method of the api and were also tested in different cases where the data was missing, random or wrong.
